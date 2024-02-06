@@ -41,7 +41,6 @@ input[type="button"] {
 .post-creater{
     display: flex;
     flex-direction: row;
-    bottom: 0;
 }
 
 #post-input{
