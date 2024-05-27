@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,4 +26,65 @@
     <script src="scripts/scripts.js"></script>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 2px solid #1a73e8;
+            border-radius: 5px;
+            outline: none;
+        }
+        input[type="submit"] {
+            height: 40px;
+            font-size: 16px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-bar">
+        <form action="https://www.bing.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="bing">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div class="search-bar">
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="google">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+</body>
 </html>
